@@ -81,7 +81,7 @@ def get_gui_items(data):
 
 def play_comic(media):
     url = urllib.parse.quote_plus(cbz_files_dir) + media + ".cbz"
-    xbmc.executebuiltin('SlideShow("zip://' + url + '", pause)'.format(media))
+    xbmc.executebuiltin('SlideShow("zip://' + url + '")')
 
 
 def list_items():
@@ -95,8 +95,15 @@ def list_items():
     slasher = get_gui_items(medias)
     medias = bd.list_by_author('fernando')
     fernando = get_gui_items(medias)
+    medias = bd.list_by_author('roberts')
+    roberts = get_gui_items(medias)
+    medias = bd.list_by_author('moffet')
+    moffet = get_gui_items(medias)
+    medias = bd.list_by_author('tempelton')
+    tempelton = get_gui_items(medias)
     bd.close()
-    window = GUI('script-main-window.xml', CWD, 'default', '1080i', True, control1=last, control2=slasher, control3=fernando)
+    window = GUI('script-main-window.xml', CWD, 'default', '1080i', True,
+                 control1=roberts, control2=fernando, control3=tempelton, control4=slasher, control5=moffet)
     window.doModal()
     del window
 
@@ -106,19 +113,25 @@ class GUI(gui.WindowXML):
         self.control1 = kwargs['control1']
         self.control2 = kwargs['control2']
         self.control3 = kwargs['control3']
+        self.control4 = kwargs['control4']
+        self.control5 = kwargs['control5']
 
     def onInit(self):
         self.cont1 = self.getControl(100)
         self.cont2 = self.getControl(200)
-        # self.cont3 = self.getControl(300)
+        self.cont3 = self.getControl(300)
+        self.cont4 = self.getControl(400)
+        self.cont5 = self.getControl(500)
         self.cont1.addItems(self.control1)
         self.cont2.addItems(self.control2)
-        # self.cont3.addItems(self.control3)
+        self.cont3.addItems(self.control3)
+        self.cont4.addItems(self.control4)
+        self.cont5.addItems(self.control5)
         xbmc.sleep(100)
         self.setFocusId(self.getCurrentContainerId())
 
     def onClick(self, control_id):
-        if control_id == 100 or control_id == 200:
+        if control_id == 100 or control_id == 200 or control_id == 300 or control_id == 400 or control_id == 500:
             control_list = self.getControl(control_id)
             item = control_list.getSelectedItem()
             media_id = item.getLabel()
