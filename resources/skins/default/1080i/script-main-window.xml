@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<views>50</views>
+	<backgroundcolor>0x00000000</backgroundcolor>
+	<animation effect="fade" time="100">WindowOpen</animation>
+	<animation effect="slide" end="0,576" time="100">WindowClose</animation>
+	<controls>
+		<control type="list" id="100">
+			<left>15</left>
+			<top>30</top>
+			<width>1865</width>
+			<height>370</height>
+			<description>Comics List 1</description>
+			<visible>true</visible>
+			<orientation>horizontal</orientation>
+			<pagecontrol>25</pagecontrol>
+			<scrolltime tween="sine" easing="out">200</scrolltime>
+			<itemlayout width="270" height="360">
+				<control type="image">
+					<left>20</left>
+					<width>250</width>
+					<height>350</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="270" height="360">
+				<control type="image">
+					<left>20</left>
+					<width>260</width>
+					<height>360</height>
+					<texture>main-window-focus.png</texture>
+				</control>
+				<control type="image">
+					<width>250</width>
+					<height>350</height>
+					<left>25</left>
+					<top>5</top>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="list" id="200">
+			<left>15</left>
+			<top>430</top>
+			<width>1865</width>
+			<height>370</height>
+			<description>Comics List 2</description>
+			<visible>true</visible>
+			<orientation>horizontal</orientation>
+			<pagecontrol>25</pagecontrol>
+			<scrolltime tween="sine" easing="out">200</scrolltime>
+			<itemlayout width="270" height="360">
+				<control type="image">
+					<left>20</left>
+					<width>250</width>
+					<height>350</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="270" height="360">
+				<control type="image">
+					<left>20</left>
+					<width>260</width>
+					<height>360</height>
+					<texture>main-window-focus.png</texture>
+				</control>
+				<control type="image">
+					<width>250</width>
+					<height>350</height>
+					<left>25</left>
+					<top>5</top>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="scrollbar" id="17">
+			<description>My first scroll bar control</description>
+			<left>80</left>
+			<top>60</top>
+			<width>250</width>
+			<height>30</height>
+			<visible>true</visible>
+			<texturesliderbackground>scroll-background.png</texturesliderbackground>
+			<texturesliderbar>bar.png</texturesliderbar>
+			<texturesliderbarfocus>bar-focus.png</texturesliderbarfocus>
+			<textureslidernib>nib.png</textureslidernib>
+			<textureslidernibfocus>nib-focus.png</textureslidernibfocus>
+			<pulseonselect></pulseonselect>
+			<orientation>vertical</orientation>
+			<showonepage>false</showonepage>
+			<onup>2</onup>
+			<ondown>3</ondown>
+			<onleft>1</onleft>
+			<onright>1</onright>
+		</control>
+	</controls>
+</window>

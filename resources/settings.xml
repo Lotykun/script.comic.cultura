@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="33000">
+    	<setting label="33001" type="lsep"/>
+    	<setting label="33002" type="text" id="neo4j-host" default=""/>
+        <setting label="33003" type="text" id="neo4j-port" default=""/>
+        <setting label="33004" type="text" id="neo4j-user" default=""/>
+        <setting label="33005" type="text" id="neo4j-password" default=""/>
+        <setting label="33006" type="text" id="cbz-files-dir" default=""/>
+        <setting label="33007" type="text" id="cbz-thumbs-dir" default=""/>
+    </category>
+</settings>

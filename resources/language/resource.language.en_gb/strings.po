@@ -1,0 +1,50 @@
+# Kodi Media Center language file
+# Addon Name: Cultura Comic
+# Addon id: script.comic.cultura
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2020-01-01 21:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: lotykun\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+# Kodion Settings
+
+msgctxt "#33000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#33001"
+msgid "config"
+msgstr "Config"
+
+msgctxt "#33002"
+msgid "neo4j-host"
+msgstr "Neo4j Host"
+
+msgctxt "#33003"
+msgid "neo4j-port"
+msgstr "Neo4j Port"
+
+msgctxt "#33004"
+msgid "neo4j-user"
+msgstr "Neo4j User"
+
+msgctxt "#33005"
+msgid "neo4j-password"
+msgstr "Neo4j Password"
+
+msgctxt "#33006"
+msgid "cbz-files-dir"
+msgstr "CBZ Files Directory"
+
+msgctxt "#33007"
+msgid "cbz-thumbs-dir"
+msgstr "CBZ Thumbs Directory"
