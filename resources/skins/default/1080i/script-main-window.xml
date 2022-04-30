@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<views>50</views>
-	<backgroundcolor>0xff0000ff</backgroundcolor>
+<!--	<backgroundcolor>0xff0000ff</backgroundcolor>-->
 	<animation effect="fade" time="100">WindowOpen</animation>
 	<animation effect="slide" end="0,576" time="100">WindowClose</animation>
 	<controls>
